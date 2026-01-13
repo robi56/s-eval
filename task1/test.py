@@ -30,7 +30,7 @@ from transformers import (
 )
 
 from data_processing import PolarizationDataProcessor
-from train import PolarizationDataset
+from train_merged import PolarizationDataset
 
 # Configure logging
 logging.basicConfig(
@@ -369,7 +369,9 @@ def main():
     if args.mode in ['submission', 'all']:
         logger.info("\nNote: Submission generation requires test data with 'id' column")
         logger.info("Use --mode submission when test data is available")
-    
+        processor = PolarizationDataProcessor(data_root=args.data_root)
+        _, dev_df = processor.prepare_datasets(save_merged=False)
+        generate_submission(predictor, dev_df, args.output_dir)  
     logger.info("\n" + "="*60)
     logger.info("Testing Complete!")
     logger.info("="*60)

@@ -84,7 +84,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default='jhu-clsp/mmBERT-small')
     parser.add_argument('--train_file', type=str, default='./data/train_merged.csv')
-    parser.add_argument('--output_dir', type=str, default='./models/gemma_model')
+    parser.add_argument('--output_dir', type=str, default='./models/mmbert')
     parser.add_argument('--epochs', type=int, default=3)
     parser.add_argument('--batch_size', type=int, default=8)
     parser.add_argument('--learning_rate', type=float, default=2e-5)
@@ -129,7 +129,7 @@ def main():
     
     model = AutoModelForSequenceClassification.from_pretrained(
         args.model_name,
-        num_labels=2,
+        num_labels=2,attn_implementation="eager",
         problem_type="single_label_classification"
     )
     

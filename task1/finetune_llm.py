@@ -229,7 +229,8 @@ training_args = TrainingArguments(
     metric_for_best_model="loss",
     greater_is_better=False,
     report_to="none",
-    fp16=torch.cuda.is_available(),
+    bf16=torch.cuda.is_available() and torch.cuda.is_bf16_supported(),
+    fp16=False,  # Disabled to avoid FP16 gradient unscaling issues
     gradient_accumulation_steps=2,
     max_grad_norm=1.0,
 )

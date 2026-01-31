@@ -120,11 +120,11 @@ def compute_metrics(eval_pred):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', type=str, default='Qwen/Qwen2.5-0.5B')
+    parser.add_argument('--model_name', type=str, default='jhu-clsp/mmBERT-base')
     parser.add_argument('--train_file', type=str, default='./data/train_merged.csv')
     parser.add_argument('--output_dir', type=str, default='./models/subtask2_model')
-    parser.add_argument('--epochs', type=int, default=5)
-    parser.add_argument('--batch_size', type=int, default=8)
+    parser.add_argument('--epochs', type=int, default=20)
+    parser.add_argument('--batch_size', type=int, default=32)
     parser.add_argument('--learning_rate', type=float, default=2e-5)
     parser.add_argument('--max_length', type=int, default=128)
     parser.add_argument('--val_split', type=float, default=0.1)

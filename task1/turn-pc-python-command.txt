@@ -1,0 +1,76 @@
+ 1107  python prepare_data_to_hf.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data
+ 1110  python prepare_data_to_hf.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data
+ 1112  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data
+ 1113  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1116  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1119  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1131  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1134  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1137  python prepare_data_to_2f1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1138  python prepare_data_to_hf2.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1141  python prepare_data_to_hf2.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1142  python prepare_data_to_2f1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1143  python prepare_data_to_f1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1144  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1148  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1150  python prepare_data_to_hf1.py --hf_username robikuet56 --dataset_name jp-conversation-large-synthetic-data --genenated_folder generated_conversations/conversations_batch_20251115-044532/
+ 1193  python train_merged.py --epochs 3 --batch_size 8
+ 1196  python train_merged.py --epochs 3 --batch_size 8
+ 1198  python train_merged.py --epochs 3 --batch_size 8
+ 1202  python train_merged.py --epochs 3 --batch_size 8
+ 1209  python train_merged.py --epochs 3 --batch_size 8
+ 1211  python train_merged.py --epochs 3 --batch_size 8
+ 1213  python train_merged.py --epochs 3 --batch_size 8
+ 1246  python task1/test.py --model_path task1/models/gemma_model/
+ 1248  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/
+ 1251  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/
+ 1254  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/
+ 1255  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/ --mode submission
+ 1257  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/ --mode submission --submission_output submission_1.csv
+ 1260  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/ --mode submission --submission_output submission_1.csv
+ 1262  python test.py --model_path models/gemma_model/checkpoint-1557 --data_root ../dev_phase/ --mode submission 
+ 1279  python submission.py --model_path models/gemma_model/final_model/ 
+ 1280  python submission.py --model_path models/gemma_model/final_model/ --test_dir ../dev_phase/subtask1/dev
+ 1307  python submission.py --model_path models/gemma_model/final_model/ --test_dir ../dev_phase/subtask1/dev
+ 1338  python submission.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1343  python submission.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1345  python submission_local.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1346  python submission.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1347  python submission_local.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1350  python submission_local.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1353  python submission_local.py     --model_path ./models/finetuned_llm/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1354  python submission_local.py     --model_path ./models/finetuned_llm_chat/final_model     --test_dir ../dev_phase/subtask1/dev     --output_dir ./submission_qwen_chat     --model_type llm     --use_chat_format
+ 1426  python dmpa_trainer_qwen.py
+ 1428  python dmpa_trainer_qwen.py 
+ 1429  python full_finetune_trainer.py 
+ 1431  python full_finetune_trainer.py 
+ 1596  python submission_local.py --model_path models/mmbert/final_model/ --output_dir submission_base
+ 1598  python submission_local.py --model_path models/mmbert/final_model/ --output_dir submission_base --test_dir ../dev_phase/subtask1/dev
+ 1665  python submission_local.py --model_path models/mmbert_focal/final_model/ --output_dir submission_base_focal --test_dir ../dev_phase/subtask1/dev
+ 1709  python test_subtask2.py --model_path models/subtask2_model/checkpoint-4146/ --data_dir ../dev_phase/subtask2/dev 
+ 1710  python test_subtask2.py --model_path models/subtask2_model/checkpoint-4146/ --data_dir ../dev_phase/subtask2/
+ 1711  python test_subtask2.py --model_path models/subtask2_model/checkpoint-4146/ --data_dir ../dev_phase/subtask2/ --mode submission
+ 1712  python ../task1/submission_local.py --model_path models/subtask2_model/checkpoint-4146 --data ../dev_phase/subtask2 --mode submission
+ 1713  python test_subtask2.py --model_path models/subtask2_model/checkpoint-4146/ --test_dir ../dev_phase/subtask2/  
+ 1714  python ../task1/submission_local.py --model_path models/subtask2_model/checkpoint-4146/ --test_dir ../dev_phase/subtask2/  
+ 1715  python ../task1/submission_local.py --model_path models/subtask2_model/checkpoint-4146/ --test_dir ../dev_phase/subtask2/dev  
+ 1718  python submission.py --model_path models/subtask2_model/checkpoint-4146/ --test_dir ../dev_phase/subtask2/dev  
+ 1729  python submission.py --model_path models/subtask3_model/checkpoint-6944/ --test_dir ../dev_phase/subtask3/dev/
+ 1730  python submission.py --model_path models/subtask3_model/checkpoint-3472/ --test_dir ../dev_phase/subtask3/dev/
+ 1795  python submission.py --model_path models/subtask2_model/final_model/ --test_dir ../dev_phase/subtask2/dev
+ 1850  history|python submission.py
+ 1961  python save_model_to_hf.py ./models--hishab--titulm-llama-3.2-1b-v1.1 --repo robikuet56/models--hishab--titulm-llama-3.2-1b-v1.1 --type model
+ 1964  python save_model_to_hf.py ./models--hishab--Qwen2.5-0.5B-qwen2.5-BN-bn-v1-noreview --repo robikuet56/Qwen2.5-0.5B-qwen2.5-BN-bn-v1-noreview --type model
+ 1968  python save_model_to_hf.py ./models--hishab--Qwen2.5-0.5B-qwen2.5-BN-bn-v1-noreview --repo robikuet56/Qwen2.5-0.5B-qwen2.5-BN-bn-v1-noreview --type model
+ 1970  python save_model_to_hf.py ./models--hishab--jeradf-turn-detector-qwen2.5-BN-v1-fullturn-noreview --repo robikuet56/jeradf-turn-detector-qwen2.5-BN-v1-fullturn-noreview --type model
+ 2003  history|grep python
+ 2007  python submission.py --model_path models/subtask3_model/checkpoint-3472/ --test_dir ../test_phase/subtask3/test --output_dr submission_test3
+ 2008  python submission.py --model_path models/subtask3_model/checkpoint-3472/ --test_dir ../test_phase/subtask3/test --output_dir submission_test3
+ 2011  python submission.py --model_path models/subtask3_model/final_model --test_dir ../test_phase/subtask3/test --output_dir submission_test3
+ 2012  history|grep python
+ 2017  python submission.py --model_path models/subtask2_model/final_model/ --test_dir ../test_phase/subtask2/test/ --output_dir submission_test2
+ 2019  histroy|grep python
+ 2020  history|grep python
+ 2023  python submission_local.py --model_path models/mmbert/final_model/ --output_dir submission_test1 --test_dir ../test_phase/subtask1/test/
+ 2026  histroy|grep python>turn-pc-python-command.txt
+ 2027  history|grep python>turn-pc-python-command.txt
